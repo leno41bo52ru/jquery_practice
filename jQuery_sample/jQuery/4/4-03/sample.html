@@ -1,0 +1,106 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>offsetメソッド / positionメソッド / cssメソッド での位置取得の違い</title>
+<!--[if lt IE 9]>
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+<!--<![endif]-->
+<script>
+$(function(){
+	$('button').on({
+		'click': function(){
+			$('#red-offset-top').val( $('#red').offset().top );
+			$('#red-offset-left').val( $('#red').offset().left );
+			$('#red-position-top').val( $('#red').position().top );
+			$('#red-position-left').val( $('#red').position().left );
+			$('#red-css-top').val( $('#red').css('top') );
+			$('#red-css-left').val( $('#red').css('left') );
+			$('#blue-offset-top').val( $('#blue').offset().top );
+			$('#blue-offset-left').val( $('#blue').offset().left );
+			$('#blue-position-top').val( $('#blue').position().top );
+			$('#blue-position-left').val( $('#blue').position().left );
+			$('#blue-css-top').val( $('#blue').css('top') );
+			$('#blue-css-left').val( $('#blue').css('left') );
+		}
+	});
+});
+</script>
+<link href="css/sample.css" rel="stylesheet">
+</head>
+<body>
+<div id="container">
+<div class="clearfix">
+<div id="box">
+<div id="red">
+<div id="blue"></div>
+</div>
+</div>
+<div id="inputs">
+<p><button>座標を取得する</button></p>
+<dl class="red">
+<dt>赤いエリア</dt>
+<dd>
+<table>
+<tr>
+<th rowspan="2">offset</th>
+<td><p>top : <input id="red-offset-top" class="field" type="text" value=""></p></td>
+</tr>
+<tr>
+<td><p>left : <input id="red-offset-left" class="field" type="text" value=""></p></td>
+</tr>
+<tr>
+<th rowspan="2">position</th>
+<td><p>top : <input id="red-position-top" class="field" type="text" value=""></p></td>
+</tr>
+<tr>
+<td><p>left : <input id="red-position-left" class="field" type="text" value=""></p></td>
+</tr>
+<tr>
+<th rowspan="2">css</th>
+<td><p>top : <input id="red-css-top" class="field" type="text" value=""></p></td>
+</tr>
+<tr>
+<td><p>left : <input id="red-css-left" class="field" type="text" value=""></p></td>
+</tr>
+</table>
+</dd>
+</dl>
+
+<dl class="blue">
+<dt>青いエリア</dt>
+<dd>
+<table>
+<tr>
+<th rowspan="2">offset</th>
+<td><p>top : <input id="blue-offset-top" class="field" type="text" value=""></p></td>
+</tr>
+<tr>
+<td><p>left : <input id="blue-offset-left" class="field" type="text" value=""></p></td>
+</tr>
+<tr>
+<th rowspan="2">position</th>
+<td><p>top : <input id="blue-position-top" class="field" type="text" value=""></p></td>
+</tr>
+<tr>
+<td><p>left : <input id="blue-position-left" class="field" type="text" value=""></p></td>
+</tr>
+<tr>
+<th rowspan="2">css</th>
+<td><p>top : <input id="blue-css-top" class="field" type="text" value=""></p></td>
+</tr>
+<tr>
+<td><p>left : <input id="blue-css-left" class="field" type="text" value=""></p></td>
+</tr>
+</table>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</body>
+</html>

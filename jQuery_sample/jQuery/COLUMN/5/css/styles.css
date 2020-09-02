@@ -1,0 +1,61 @@
+html,body,div,dl,dt,dd{
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body{
+	height: 100%;
+}
+
+body{
+	font-family: "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 12px;
+	line-height: 24px;
+	text-align: center;
+}
+
+#main{
+	width: 900px;
+	margin: 0 auto;
+	padding: 24px;
+	text-align: left;
+}
+
+#main dl{
+	width: 900px;
+	margin: 12px 0;
+	padding: 12px 0;
+	border-bottom: 1px solid #ccc;
+}
+
+#main dt{
+	float: left;
+	width: 240px;
+	font-weight: bold;
+}
+
+#main dd{
+	float: left;
+	width: 660px;
+}
+
+#main dl:after{
+  content:".";
+  display:block;
+  clear:both;
+  height:0;
+  visibility:hidden;
+}
+
+#main dl{
+  display:inline-block;
+}
+
+* html #main dl{
+  height:1%;
+}
+
+#main dl{
+  display:block;
+}

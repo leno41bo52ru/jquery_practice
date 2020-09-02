@@ -1,0 +1,222 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>mouseenter/mouseleave と mouseover/mouseout の違い</title>
+<!--[if lt IE 9]>
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+<!--<![endif]-->
+<script>
+$(function(){
+
+	var cntRedMouseEnter = 0;
+	var cntRedMouseLeave = 0;
+	var cntRedMouseOver = 0;
+	var cntRedMouseOut = 0;
+
+	var cntBlueMouseEnter = 0;
+	var cntBlueMouseLeave = 0;
+	var cntBlueMouseOver = 0;
+	var cntBlueMouseOut = 0;
+
+	$('#red').mouseenter(function(e){
+
+		cntRedMouseEnter++;
+		$('#redMouseEnter').text(cntRedMouseEnter);
+
+	}).mouseleave(function(e){
+
+		cntRedMouseLeave++;
+		$('#redMouseLeave').text(cntRedMouseLeave);
+
+	}).mouseover(function(e){
+
+		cntRedMouseOver++;
+		$('#redMouseOver').text(cntRedMouseOver);
+
+	}).mouseout(function(e){
+
+		cntRedMouseOut++;
+		$('#redMouseOut').text(cntRedMouseOut);
+
+	});
+
+	$('#blue').mouseenter(function(e){
+
+		cntBlueMouseEnter++;
+		$('#blueMouseEnter').text(cntBlueMouseEnter);
+
+	}).mouseleave(function(e){
+
+		cntBlueMouseLeave++;
+		$('#blueMouseLeave').text(cntBlueMouseLeave);
+
+	}).mouseover(function(e){
+
+		cntBlueMouseOver++;
+		$('#blueMouseOver').text(cntBlueMouseOver);
+
+	}).mouseout(function(e){
+
+		cntBlueMouseOut++;
+		$('#blueMouseOut').text(cntBlueMouseOut);
+
+	});
+
+});
+</script>
+<style>
+<!--
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	color: #333;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+}
+#container{
+	margin: 20px;
+}
+h1{
+	margin: 0 0 20px;
+}
+
+#box{
+	float: left;
+	width: 500px;
+}
+
+#inputs{
+	float: left;
+	width: 300px;
+}
+
+#red{
+	width: 250px;
+	height: 250px;
+	padding: 100px;
+	background-color: #f66;
+}
+
+#blue{
+	width: 100%;
+	height: 100%;
+	background-color: #66f;
+}
+
+.callback{
+	width: 120px;
+	padding: 8px 12px;
+	border: 1px solid #333;
+}
+
+#inputs p{
+	margin: 0 0 12px;
+}
+
+#inputs table{
+	margin: 0 0 24px;
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 12px;
+}
+
+#inputs table caption.redcap{
+	color: #f66;
+	font-weight: bold;
+}
+
+#inputs table caption.bluecap{
+	color: #66f;
+	font-weight: bold;
+}
+
+#inputs table th,
+#inputs table td{
+	padding: 8px 16px;
+	border: 1px solid #aaa;
+	text-align: left;
+}
+
+/* "clearfix" */
+.clearfix:after{
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix{
+	display: inline-block;
+}
+
+* html .clearfix{
+	height: 1%;
+}
+
+.clearfix{
+	display: block;
+}
+-->
+</style>
+</head>
+<body>
+<div id="container">
+<div class="clearfix">
+<div id="box">
+<div id="red">
+<div id="blue"></div>
+</div>
+</div>
+<div id="inputs">
+<table>
+<caption class="redcap">red area</caption>
+<tr>
+<th>mouseenter</th>
+<td id="redMouseEnter">0</td>
+</tr>
+<tr>
+<th>mouseleave</th>
+<td id="redMouseLeave">0</td>
+</tr>
+<tr>
+<th>mouseover</th>
+<td id="redMouseOver">0</td>
+</tr>
+<tr>
+<th>mouseout</th>
+<td id="redMouseOut">0</td>
+</tr>
+</table>
+<table>
+<caption class="bluecap">blue area</caption>
+<tr>
+<th>mouseenter</th>
+<td id="blueMouseEnter">0</td>
+</tr>
+<tr>
+<th>mouseleave</th>
+<td id="blueMouseLeave">0</td>
+</tr>
+<tr>
+<th>mouseover</th>
+<td id="blueMouseOver">0</td>
+</tr>
+<tr>
+<th>mouseout</th>
+<td id="blueMouseOut">0</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

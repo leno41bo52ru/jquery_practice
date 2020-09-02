@@ -1,0 +1,14 @@
+html,body,p{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	text-align: center;
+}
+
+#photo{
+	margin: 0;
+	padding: 24px;
+	display: none;
+}

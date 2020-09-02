@@ -1,0 +1,132 @@
+html,body,ul,li,p,div{
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body{
+	height: 100%;
+}
+
+body{
+	text-align: center;
+}
+
+#photos{
+	width: 960px;
+	margin: 0 auto;
+	padding: 24px 0;
+}
+
+#photos li{
+	float: left;
+	width: 220px;
+	margin: 10px;
+	list-style: none;
+}
+
+#photos li img{
+	border: 10px solid #ccc;
+}
+
+#photos li .black{
+	border: 10px solid #333;
+}
+
+#photos li .red{
+	border: 10px solid #933;
+}
+
+#photos:after{
+  content:".";
+  display:block;
+  clear:both;
+  height:0;
+  visibility:hidden;
+}
+
+* html #photos{
+  height:1%;
+}
+
+#photos{
+  display:block;
+}
+
+/* ---------------------------------------------
+MODAL STYLE
+--------------------------------------------- */
+#modalContent{
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 960px;
+	min-height: 336px;
+	z-index: 99999;
+}
+
+#modalOverlay{
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 960px;
+	min-height: 336px;
+}
+
+#modalBox{
+	position: absolute;
+	padding: 72px;
+	background: #fff;
+}
+
+#modalPictureBox{
+	overflow: hidden;
+}
+
+#modalCloseBtn{
+	display: none;
+	position: absolute;
+	top: 0;
+	right: -38px;
+	width: 38px;
+	height: 38px;
+	background: url(../images/btn_close.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+
+#modalPrevBtn{
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 17px;
+	width: 38px;
+	height: 38px;
+	margin: -19px 0 0;
+	background: url(../images/prev.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+
+#modalNextBtn{
+	display: none;
+	position: absolute;
+	top: 50%;
+	right: 17px;
+	width: 38px;
+	height: 38px;
+	margin: -19px 0 0;
+	background: url(../images/next.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+
+#modalLoading{
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 32px;
+	height: 32px;
+	margin: -16px 0 0 -16px;
+	background: url(../images/loading.gif) 0 0 no-repeat;
+}

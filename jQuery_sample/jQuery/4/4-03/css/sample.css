@@ -1,0 +1,104 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	color: #333;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+#box{
+	position: relative;
+	float: left;
+	width: 440px;
+	margin: 0 0 24px;
+}
+
+#inputs{
+	float: left;
+	width: 400px;
+}
+
+#red{
+	position: relative;
+	top: 20px;
+	left: 20px;
+	width: 400px;
+	height: 400px;
+	background-color: #f66;
+}
+
+#blue{
+	position: relative;
+	top: 20px;
+	left: 20px;
+	width: 360px;
+	height: 360px;
+	background-color: #66f;
+}
+
+.red dt{
+	color: #f66;
+}
+
+.blue dt{
+	color: #66f;
+}
+
+#inputs p{
+	margin: 20px 0;
+}
+
+#inputs td p{
+	margin: 0;
+}
+
+#inputs p button{
+	padding: 8px;
+}
+
+#inputs table{
+	margin: 0 0 24px;
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 12px;
+}
+
+#inputs table caption.redcap{
+	color: #f66;
+	font-weight: bold;
+}
+
+#inputs table caption.bluecap{
+	color: #66f;
+	font-weight: bold;
+}
+
+#inputs table th,
+#inputs table td{
+	padding: 8px 16px;
+	border: 1px solid #aaa;
+	text-align: left;
+}
+
+.clearfix:after{
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix{
+	display: inline-block;
+}
+
+* html .clearfix{
+	height: 1%;
+}
+
+.clearfix{
+	display: block;
+}

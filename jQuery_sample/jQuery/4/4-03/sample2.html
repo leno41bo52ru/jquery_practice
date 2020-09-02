@@ -1,0 +1,89 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>要素のサイズを取得する</title>
+<!--[if lt IE 9]>
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+<!--<![endif]-->
+<script>
+$(function(){
+	$('button').on({
+		'click': function(){
+			$('#red-width').val( $('#red').width() );
+			$('#red-height').val( $('#red').height() );
+			$('#red-innerWidth').val( $('#red').innerWidth() );
+			$('#red-innerHeight').val( $('#red').innerHeight() );
+			$('#red-outerWidth').val( $('#red').outerWidth() );
+			$('#red-outerHeight').val( $('#red').outerHeight() );
+			$('#red-outerWidth-true').val( $('#red').outerWidth(true) );
+			$('#red-outerHeight-true').val( $('#red').outerHeight(true) );
+		}
+	});
+});
+</script>
+<link href="css/sample2.css" rel="stylesheet">
+</head>
+<body>
+<div id="container">
+<div class="clearfix">
+<div id="box">
+<div id="red"></div>
+</div>
+<div id="inputs">
+<p><button>サイズを取得する</button></p>
+<dl class="red">
+<dt>赤いエリア</dt>
+<dd>
+<table>
+<tr>
+<th>width()</th>
+<td><p><input id="red-width" class="field" type="text" value=""></p></td>
+</tr>
+<tr>
+<th>height()</th>
+<td><p><input id="red-height" class="field" type="text" value=""></p></td>
+</tr>
+</table>
+<table>
+<tr>
+<th>innerWidth()</th>
+<td><p><input id="red-innerWidth" class="field" type="text" value=""></p></td>
+</tr>
+<tr>
+<th>innerHeight()</th>
+<td><p><input id="red-innerHeight" class="field" type="text" value=""></p></td>
+</tr>
+</table>
+<table>
+<tr>
+<th>outerWidth()</th>
+<td><p><input id="red-outerWidth" class="field" type="text" value=""></p></td>
+</tr>
+<tr>
+<th>outerHeight()</th>
+<td><p><input id="red-outerHeight" class="field" type="text" value=""></p></td>
+</tr>
+</table>
+<table>
+<tr>
+<th>outerWidth(true)</th>
+<td><p><input id="red-outerWidth-true" class="field" type="text" value=""></p></td>
+</tr>
+<tr>
+<th>outerHeight(true)</th>
+<td><p><input id="red-outerHeight-true" class="field" type="text" value=""></p></td>
+</tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
+</div>
+</body>
+</html>

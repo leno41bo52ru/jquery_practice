@@ -1,0 +1,172 @@
+html,body,div,ul,li,p,img{
+	margin: 0;
+	padding: 0;
+}
+
+img{
+	border: none;
+}
+
+html,
+body{
+	height: 100%;
+}
+
+body{
+	font-family: "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	text-align: center;
+}
+
+#fbPhotos #nextBtn{
+	display: none;
+	width: 960px;
+	margin: 0 auto;
+	padding: 5px 0;
+	cursor: pointer;
+}
+
+#fbPhotos #photos{
+	width: 960px;
+	margin: 0 auto;
+	padding: 10px 0 0;
+	text-align: left;
+}
+
+#fbPhotos #photos ul{
+
+}
+
+#fbPhotos #photos li{
+	position: relative;
+	overflow: hidden;
+	display: block;
+	float: left;
+	width: 180px;
+	height: 180px;
+	margin: 5px;
+	border: 1px solid #ccc;
+	list-style: none;
+	text-align: center;
+}
+
+#fbPhotos #photos li img{
+	display: none;
+	width: 180px;
+	z-index: 2;
+	cursor: pointer;
+}
+
+#fbPhotos .loading{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 32px;
+	height: 32px;
+	margin: -16px 0 0 -16px;
+	z-index: 1;
+}
+
+#fbPhotos .loading img{
+	display: block !important;
+	width: 32px !important;
+	height: 32px !important;
+}
+
+#modalContent{
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99999;
+}
+
+#modalOverlay{
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 960px;
+}
+
+#modalBox{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 300px;
+	height: 300px;
+	padding: 72px;
+	background: #fff;
+}
+
+#modalPictureBox{
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+#modalCloseBtn{
+	display: none;
+	position: absolute;
+	top: 0;
+	right: -38px;
+	width: 38px;
+	height: 38px;
+	background: url(../images/btn_close.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+
+#modalPrevBtn{
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 17px;
+	width: 38px;
+	height: 38px;
+	margin: -19px 0 0;
+	background: url(../images/prev.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+
+#modalNextBtn{
+	display: none;
+	position: absolute;
+	top: 50%;
+	right: 17px;
+	width: 38px;
+	height: 38px;
+	margin: -19px 0 0;
+	background: url(../images/next.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+
+#modalLoading{
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 32px;
+	height: 32px;
+	margin: -16px 0 0 -16px;
+	background: url(../images/loading.gif) 0 0 no-repeat;
+}
+
+#fbPhotos #photos ul:after{
+  content:".";
+  display:block;
+  clear:both;
+  height:0;
+  visibility:hidden;
+}
+
+#fbPhotos #photos ul{
+  display:inline-block;
+}
+
+* html #fbPhotos #photos ul{
+  height:1%;
+}
+
+#fbPhotos #photos ul{
+  display:block;
+}

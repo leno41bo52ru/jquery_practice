@@ -1,0 +1,54 @@
+html,body,div,p,ul,li{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	text-align: center;
+}
+
+#main{
+	width: 960px;
+	margin: 24px auto 0;
+	text-align: left;
+}
+
+.tickerList{
+	overflow: hidden;
+	position: relative;
+	width: 960px;
+	height: 24px;
+	border: 5px solid #ccc;
+	cursor: pointer;
+}
+
+.tickerList li{
+	position: absolute;
+	left: 960px;
+	width: 954px;
+	padding: 0 0 0 6px;
+	list-style: none;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.tickerList:after{
+  content:".";
+  display:block;
+  clear:both;
+  height:0;
+  visibility:hidden;
+}
+
+.tickerList{
+  display:inline-block;
+}
+
+* html .tickerList{
+  height:1%;
+}
+
+.tickerList{
+  display:block;
+}

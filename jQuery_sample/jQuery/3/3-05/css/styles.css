@@ -1,0 +1,49 @@
+html,body,div,ul,li{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	text-align: center;
+}
+
+#photoBox{
+	width: 400px;
+	margin: 24px auto;
+}
+
+#photolist{
+	position: relative;
+}
+
+#photolist li{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	list-style: none;
+}
+
+#tnlist{
+	position: relative;
+	top: 336px;
+	width: 400px;
+	background: #f00;
+}
+
+#tnlist ul{
+	width: 320px;
+	margin: 0 auto;
+	padding: 0 0 0 20px;
+	text-align: left;
+}
+
+#tnlist li{
+	float: left;
+	width: 80px;
+	list-style: none;
+}
+
+#tnlist li a{
+	cursor: pointer;
+}

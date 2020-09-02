@@ -1,0 +1,24 @@
+html,body,div, iframe{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	text-align: center;
+}
+
+#main{
+	width: 900px;
+	margin: 10px auto 0;
+}
+
+#main .yt{
+	float: left;
+	margin: 10px;
+}
+
+.yt{
+	display: inline-block;
+	border: 10px solid #ccc;
+	line-height: 0;
+}
