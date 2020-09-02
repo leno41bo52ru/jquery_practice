@@ -1,0 +1,59 @@
+html,body,div,ul,li{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	text-align: center;
+}
+
+#photoBox{
+	width: 400px;
+	margin: 24px auto;
+}
+
+#photolist{
+	position: relative;
+	z-index: 2;
+	width: 400px;
+}
+
+#photolist li{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	list-style: none;
+}
+
+#control{
+	position:relative;
+	top: 131px;
+	z-index: 1;
+	width: 536px;
+	height: 38px;
+	text-align: center;
+}
+
+#control ul{
+	position: relative;
+}
+
+#control li{
+	position: absolute;
+	top: 0;
+	left: 0;
+	list-style: none;
+}
+
+#control #prev{
+	left: -62px;
+}
+
+#control #next{
+	left: 424px;
+}
+
+#control li a{
+	cursor: pointer;
+}

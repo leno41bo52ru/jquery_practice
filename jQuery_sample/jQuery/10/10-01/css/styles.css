@@ -1,0 +1,81 @@
+html,body,div,ul,li,p,img{
+	margin: 0;
+	padding: 0;
+}
+
+img{
+	border: none;
+}
+
+body{
+	font-family: "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	text-align: center;
+}
+
+#fbPhotos #nextBtn{
+	display: none;
+	width: 960px;
+	margin: 5px auto;
+	cursor: pointer;
+}
+
+#fbPhotos #photos{
+	width: 960px;
+	margin: 10px auto 0;
+	text-align: left;
+}
+
+#fbPhotos #photos li{
+	position: relative;
+	overflow: hidden;
+	display: block;
+	float: left;
+	width: 180px;
+	height: 180px;
+	margin: 5px;
+	border: 1px solid #ccc;
+	list-style: none;
+	text-align: center;
+}
+
+#fbPhotos #photos li img{
+	display: none;
+	width: 180px;
+	z-index: 2;
+}
+
+#fbPhotos .loading{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 32px;
+	height: 32px;
+	margin: -16px 0 0 -16px;
+	z-index: 1;
+}
+
+#fbPhotos .loading img{
+	display: block !important;
+	width: 32px !important;
+	height: 32px !important;
+}
+
+#fbPhotos #photos ul:after{
+  content:".";
+  display:block;
+  clear:both;
+  height:0;
+  visibility:hidden;
+}
+
+#fbPhotos #photos ul{
+  display:inline-block;
+}
+
+* html #fbPhotos #photos ul{
+  height:1%;
+}
+
+#fbPhotos #photos ul{
+  display:block;
+}

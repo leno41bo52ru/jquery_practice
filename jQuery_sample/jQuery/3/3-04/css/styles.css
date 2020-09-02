@@ -1,0 +1,23 @@
+html,body{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	text-align: center;
+}
+
+#photolist{
+	position: relative;
+	width: 400px;
+	margin: 24px auto;
+	padding: 0;
+}
+
+#photolist li{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	list-style: none;
+}

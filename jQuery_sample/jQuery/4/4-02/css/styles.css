@@ -1,0 +1,63 @@
+html,body,div,ul,li,p{
+	margin: 0;
+	padding: 0;
+}
+
+img{
+	border: none;
+}
+
+#pulldown{
+	margin: 90px 0 0;
+	text-align: center;
+}
+
+#pulldown ul{
+	width: 600px;
+	margin: 0 auto;
+	list-style: none;
+}
+
+#pulldown ul li{
+	float: left;
+	width: 300px;
+	list-style: none;
+	line-height: 0;
+}
+
+#pulldown ul li div{
+	padding: 0;
+	display: none;
+}
+
+#pulldown ul #menu0 div{
+	background: #e7c9ca;
+}
+
+#pulldown ul #menu1 div{
+	background: #d2dbcf;
+}
+
+#pulldown ul li ul{
+	width: 300px;
+}
+
+#pulldown ul:after{
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+#pulldown ul{
+	display: inline-block;
+}
+
+* html #pulldown ul{
+	height: 1%;
+}
+
+#pulldown ul{
+	display: block;
+}

@@ -1,0 +1,98 @@
+html,body,div,ul,li,p,img{
+	margin: 0;
+	padding: 0;
+}
+
+img{
+	border: none;
+}
+
+body{
+	font-family: "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	text-align: center;
+}
+
+#main{
+	width: 960px;
+	margin: 80px auto 0;
+	text-align: left;
+}
+@media screen and (max-width: 640px) {
+	#main{
+		width: 100%;
+	}
+}
+@media print, screen and (min-width: 641px) {
+	#main{
+		width: 960px;
+	}
+}
+
+#slideContent{
+	position: relative;
+}
+
+#slideBox{
+	width: 100%;
+}
+
+#slideBox ul{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+
+#slideBox li{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	width: 100%;
+	list-style: none;
+}
+
+#slideBox li img{
+	width: 100%;
+}
+
+#slideContent #control{
+	display: none;
+}
+
+#slideContent #control p{
+	position: absolute;
+	top: 50%;
+	margin: -19px 0 0;
+}
+
+#slideContent #control #prev{
+	left: 12px;
+}
+
+#slideContent #control #next{
+	right: 12px;
+}
+
+#slideContent #control p a{
+	cursor: pointer;
+}
+
+#slideBox ul:after{
+  content:".";
+  display:block;
+  clear:both;
+  height:0;
+  visibility:hidden;
+}
+
+#slideBox ul{
+  display:inline-block;
+}
+
+* html #slideBox ul{
+  height:1%;
+}
+
+#slideBox ul{
+  display:block;
+}

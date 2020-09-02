@@ -1,0 +1,22 @@
+html,body,p{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	text-align: center;
+}
+
+#pic-box{
+	position: relative;
+	overflow: hidden;
+	width: 331px;
+	height: 328px;
+	margin: 24px auto 0;
+}
+
+#pic{
+	position: absolute;
+	top: 0;
+	left: 0;
+}

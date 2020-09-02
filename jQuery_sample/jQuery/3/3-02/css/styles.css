@@ -1,0 +1,13 @@
+html,body,div,p{
+	margin: 0;
+	padding: 0;
+}
+
+div{
+	position: relative;
+	margin: 14px;
+}
+
+#photo{
+	position: absolute;
+}
